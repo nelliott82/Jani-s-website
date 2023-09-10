@@ -7,6 +7,9 @@
   position: relative;
   border-radius: 54px;
   padding: 16px 24px;
+  @media (max-width: 863px) {
+    margin-bottom: 3rem;
+  }
 }
 .pill > :global(.__wab_flex-container) {
   flex-direction: row;

@@ -164,7 +164,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   sty.text___1Ijsg
                 )}
               >
-                {"Meraki"}
+                {"Jani"}
               </div>
               <div
                 className={classNames(
@@ -328,6 +328,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       projectcss.__wab_text,
                       sty.text__o8AC
                     )}
+                    onClick={() => { console.log('Works!' )}}
                   >
                     {"Makeup express"}
                   </div>

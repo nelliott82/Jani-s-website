@@ -604,6 +604,9 @@
   min-width: 0;
   flex-shrink: 0;
   border-radius: 412px;
+  @media (max-width: 863px) {
+    margin-bottom: 0.5rem;
+  }
 }
 .makeupDescription__ki1Xt:global(.__wab_instance) {
   position: relative;
@@ -666,6 +669,9 @@
   min-width: 0;
   flex-shrink: 0;
   border-radius: 412px;
+  @media (max-width: 863px) {
+    margin-bottom: 0.5rem;
+  }
 }
 @media (min-width: 0px) and (max-width: 962px) {
   .expressMakeup3 {
@@ -683,6 +689,9 @@
   flex-shrink: 0;
   border-radius: 412px;
   margin: -40px 0px 0px;
+  @media (max-width: 863px) {
+    margin-bottom: 0.5rem;
+  }
 }
 .makeupDescription__i6Auw:global(.__wab_instance) {
   position: relative;
@@ -744,6 +753,9 @@
   min-width: 0;
   flex-shrink: 0;
   border-radius: 412px;
+  @media (max-width: 863px) {
+    margin-bottom: 0.5rem;
+  }
 }
 @media (min-width: 0px) and (max-width: 962px) {
   .expressMakeup4 {
@@ -761,6 +773,9 @@
   flex-shrink: 0;
   border-radius: 412px;
   margin: -40px 0px 0px;
+  @media (max-width: 863px) {
+    margin-bottom: 0.5rem;
+  }
 }
 @media (min-width: 0px) and (max-width: 962px) {
   .socialMakeup3 {
@@ -778,6 +793,9 @@
   flex-shrink: 0;
   border-radius: 412px;
   margin: -40px 0px 0px;
+  @media (max-width: 863px) {
+    margin-bottom: 0.5rem;
+  }
 }
 .makeupDescription__fjm9W:global(.__wab_instance) {
   position: relative;
@@ -910,6 +928,9 @@
   z-index: 3;
   flex-shrink: 0;
   border-radius: 412px;
+  @media (max-width: 863px) {
+    margin-bottom: 0.5rem;
+  }
 }
 .socialMakeup {
   background: url("./images/maquillajeRePro.jpg") center center / cover no-repeat;

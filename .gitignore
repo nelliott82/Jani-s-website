@@ -12,6 +12,8 @@
 /build
 
 # misc
+bundle.js
+bundle.js.LICENSE.txt
 .DS_Store
 .env.local
 .env.development.local

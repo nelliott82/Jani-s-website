@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@babel/core": "^7.22.17",
+    "@babel/plugin-transform-runtime": "^7.22.15",
+    "@babel/preset-env": "^7.22.15",
+    "@babel/preset-react": "^7.22.15",
     "@plasmicapp/cli": "^0.1.308",
     "@plasmicapp/react-web": "^0.2.250",
     "@testing-library/jest-dom": "^5.17.0",
@@ -12,17 +16,24 @@
     "@types/node": "^16.18.50",
     "@types/react": "^18.2.21",
     "@types/react-dom": "^18.2.7",
+    "babel-loader": "^9.1.3",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "morgan": "^1.10.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
+    "ts-loader": "^9.4.4",
     "typescript": "^4.9.5",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "npx nodemon --watch server server/index.js",
+    "build": "npm install",
+    "start": "webpack --mode production && npm run server"
   },
   "eslintConfig": {
     "extends": [
@@ -41,5 +52,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "css-loader": "^6.8.1",
+    "style-loader": "^3.3.3"
   }
 }
