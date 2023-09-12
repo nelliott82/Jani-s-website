@@ -458,7 +458,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         sty.text__rTc
                       )}
                     >
-                      {"Makeup social"}
+                      {"Makeup para bodas"}
                     </div>
                   </Tab>
                 ) : null}
@@ -608,25 +608,26 @@ function PlasmicHomepage__RenderFunc(props: {
                 {(
                   hasVariant(globalVariants, "screen", "tablet") ? true : false
                 ) ? (
-                  <MakeupDescription
-                    className={classNames(
-                      "__wab_instance",
-                      sty.makeupDescription__npsJ
-                    )}
-                    makeupType={"express"}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__atNwH
-                      )}
-                    >
-                      {
-                        "Limpieza superficial e hidrataci\u00f3n de la piel. Dise\u00f1o de cejas. Correcci\u00f3n de imperfecciones de la piel. Contorno de rostro.\nDelineado. M\u00e1scara de pesta\u00f1as. Labial."
-                      }
-                    </div>
-                  </MakeupDescription>
+                  // <MakeupDescription
+                  //   className={classNames(
+                  //     "__wab_instance",
+                  //     sty.makeupDescription__npsJ
+                  //   )}
+                  //   makeupType={"express"}
+                  // >
+                  //   <div
+                  //     className={classNames(
+                  //       projectcss.all,
+                  //       projectcss.__wab_text,
+                  //       sty.text__atNwH
+                  //     )}
+                  //   >
+                  //     {
+                  //       "Limpieza superficial e hidrataci\u00f3n de la piel. Dise\u00f1o de cejas. Correcci\u00f3n de imperfecciones de la piel. Contorno de rostro.\nDelineado. M\u00e1scara de pesta\u00f1as. Labial."
+                  //     }
+                  //   </div>
+                  // </MakeupDescription>
+                  null
                 ) : null}
                 <p.Stack
                   as={"div"}
