@@ -321,7 +321,6 @@ function PlasmicHomepage__RenderFunc(props: {
                       projectcss.__wab_text,
                       sty.text__o8AC
                     )}
-                    onClick={() => { console.log('Works!' )}}
                   >
                     {"Makeup express"}
                   </div>

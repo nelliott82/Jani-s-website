@@ -38,7 +38,7 @@ function Tab_(props: TabProps, ref: HTMLElementRefOf<"div">) {
   // By default, we are just piping all TabProps here, but feel free
   // to do whatever works for you.
 
-  return <PlasmicTab pill={{ ref }} {...props} />;
+  return <PlasmicTab pill={{ ref: ref as any }} {...props} />;
 }
 
 const Tab = React.forwardRef(Tab_);
