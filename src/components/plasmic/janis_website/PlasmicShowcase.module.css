@@ -1,0 +1,220 @@
+.showcase {
+  width: auto;
+  height: auto;
+  display: inline-flex;
+  flex-direction: column;
+  overflow: visible;
+  position: relative;
+}
+.showcase > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: calc(0px - 35px);
+  height: calc(100% + 35px);
+}
+.showcase > :global(.__wab_flex-container) > *,
+.showcase > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.showcase > :global(.__wab_flex-container) > picture > img,
+.showcase
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 35px;
+}
+@media (min-width: 0px) and (max-width: 962px) {
+  .showcase {
+    display: flex;
+  }
+}
+@media (max-width: 862px) {
+  .showcase {
+    display: none;
+  }
+}
+@media (max-width: 678px) {
+  .showcase {
+    display: none;
+  }
+}
+.tabs {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+}
+.tabs > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: calc(0px - 8px);
+  width: calc(100% + 8px);
+}
+.tabs > :global(.__wab_flex-container) > *,
+.tabs > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.tabs > :global(.__wab_flex-container) > picture > img,
+.tabs > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
+  margin-left: 8px;
+}
+.tab__utygw:global(.__wab_instance) {
+  position: relative;
+  transition-property: all;
+  transition-duration: 1s;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 1s;
+}
+.text__anTm6 {
+  padding-top: 0px;
+}
+.tab__oOjj:global(.__wab_instance) {
+  position: relative;
+}
+.text__fl5KA {
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+.tab__zpz3O:global(.__wab_instance) {
+  position: relative;
+}
+.text__owSqE {
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+.images:global(.__wab_instance) {
+  position: relative;
+  align-self: stretch;
+}
+.serviceDescriptions {
+  width: auto;
+  height: 210px;
+  display: flex;
+  position: relative;
+  overflow: visible;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: calc(-140px + 35px) !important;
+  z-index: 4;
+  align-self: flex-end;
+  flex-shrink: 0;
+}
+.makeupDescription__gVWjD:global(.__wab_instance) {
+  position: relative;
+}
+.makeupDescriptionmakeupType_social__gVWjDvoQrK:global(.__wab_instance) {
+  display: none;
+}
+.text__ccl9L {
+  height: auto;
+}
+.makeupDescription__jAtmG:global(.__wab_instance) {
+  position: relative;
+}
+@media (min-width: 0px) and (max-width: 962px) {
+  .makeupDescription__jAtmG:global(.__wab_instance) {
+    display: none;
+  }
+}
+.makeupDescriptionmakeupType_social__jAtmGvoQrK:global(.__wab_instance) {
+  display: flex;
+}
+.text__ve2BQ {
+  height: auto;
+}
+.maquillajeRePro2 {
+  background: rgba(59, 39, 32, 1);
+  width: 362px;
+  height: auto;
+  position: relative;
+  flex-direction: column;
+  display: none;
+  padding: 40px 56px;
+}
+.maquillajeRePro2 > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: calc(0px - 16px);
+  height: calc(100% + 16px);
+}
+.maquillajeRePro2 > :global(.__wab_flex-container) > *,
+.maquillajeRePro2 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.maquillajeRePro2 > :global(.__wab_flex-container) > picture > img,
+.maquillajeRePro2
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 16px;
+}
+.svg__tTniV {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  color: #fff;
+  width: 16px;
+  height: 4px;
+  display: block;
+  flex-shrink: 0;
+}
+.text__gUCfV {
+  display: block;
+  font-size: 16px;
+  font-family: "Futura Bk BT";
+  letter-spacing: 0em;
+  line-height: 100%;
+  color: rgba(255, 255, 255, 1);
+  align-self: stretch;
+  position: relative;
+}
+.maquillajeElPurete2 {
+  background: rgba(200, 186, 186, 1);
+  width: 362px;
+  height: auto;
+  position: relative;
+  flex-direction: column;
+  display: none;
+  padding: 40px 56px;
+}
+.maquillajeElPurete2 > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: calc(0px - 16px);
+  height: calc(100% + 16px);
+}
+.maquillajeElPurete2 > :global(.__wab_flex-container) > *,
+.maquillajeElPurete2
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > *,
+.maquillajeElPurete2 > :global(.__wab_flex-container) > picture > img,
+.maquillajeElPurete2
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 16px;
+}
+.svg___9Diuu {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  color: #3c2821;
+  width: 16px;
+  height: 2px;
+  display: block;
+  flex-shrink: 0;
+}
+.text__vk5S {
+  display: block;
+  font-size: 16px;
+  font-family: "Futura Bk BT";
+  letter-spacing: 0em;
+  line-height: 100%;
+  color: rgba(59, 39, 32, 1);
+  align-self: stretch;
+  position: relative;
+}

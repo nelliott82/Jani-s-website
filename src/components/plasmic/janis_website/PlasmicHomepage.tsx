@@ -34,6 +34,7 @@ import {
 } from "@plasmicapp/react-web";
 import Tab from "../../Tab"; // plasmic-import: Ss0T6rPu5VE1/component
 import MakeupDescription from "../../MakeupDescription"; // plasmic-import: vpKpPdjytWKi/component
+import Showcase from "../../Showcase"; // plasmic-import: zjX1ZiAZla8T/component
 
 import { useScreenVariants as useScreenVariantsdpeUlLjeGa6Y } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: dpeULLjeGa6Y/globalVariant
 
@@ -46,8 +47,6 @@ import BxlfacebookIcon from "./icons/PlasmicIcon__Bxlfacebook"; // plasmic-impor
 import AkarIconstwitterFillIcon from "./icons/PlasmicIcon__AkarIconstwitterFill"; // plasmic-import: PGVe6aBw36hQ/icon
 import AkarIconsinstagramFillIcon from "./icons/PlasmicIcon__AkarIconsinstagramFill"; // plasmic-import: jKlhnsafrDZi/icon
 import BxlpinterestAltIcon from "./icons/PlasmicIcon__BxlpinterestAlt"; // plasmic-import: 7QSd0mx02ktM/icon
-import LineIcon from "./icons/PlasmicIcon__Line"; // plasmic-import: 1Ce72h70RCoB/icon
-import Line2Icon from "./icons/PlasmicIcon__Line2"; // plasmic-import: 2pBtv_yC8Zpj/icon
 
 createPlasmicElementProxy;
 
@@ -80,15 +79,7 @@ export type PlasmicHomepage__OverridesType = {
   expressMakeup4?: p.Flex<"div">;
   socialMakeup3?: p.Flex<"div">;
   weddingMakeup2?: p.Flex<"div">;
-  showcase?: p.Flex<"div">;
-  tabs?: p.Flex<"div">;
-  images?: p.Flex<"div">;
-  expressMakeup?: p.Flex<"div">;
-  socialMakeup?: p.Flex<"div">;
-  weddingMakeup?: p.Flex<"div">;
-  serviceDescriptions?: p.Flex<"div">;
-  maquillajeRePro2?: p.Flex<"div">;
-  maquillajeElPurete2?: p.Flex<"div">;
+  showcase?: p.Flex<typeof Showcase>;
 };
 
 export interface DefaultHomepageProps {
@@ -315,8 +306,10 @@ function PlasmicHomepage__RenderFunc(props: {
               ) ? (
                 <Tab
                   big={
-                    hasVariant(globalVariants, "screen", "phone")
+                    hasVariant(globalVariants, "screen", "phone2")
                       ? undefined
+                      : hasVariant(globalVariants, "screen", "phone")
+                      ? true
                       : true
                   }
                   className={classNames("__wab_instance", sty.tab__jZBz)}
@@ -371,8 +364,10 @@ function PlasmicHomepage__RenderFunc(props: {
               ) ? (
                 <Tab
                   big={
-                    hasVariant(globalVariants, "screen", "phone")
+                    hasVariant(globalVariants, "screen", "phone2")
                       ? undefined
+                      : hasVariant(globalVariants, "screen", "phone")
+                      ? true
                       : true
                   }
                   className={classNames("__wab_instance", sty.tab__hRYt9)}
@@ -444,8 +439,10 @@ function PlasmicHomepage__RenderFunc(props: {
                 ) ? (
                   <Tab
                     big={
-                      hasVariant(globalVariants, "screen", "phone")
+                      hasVariant(globalVariants, "screen", "phone2")
                         ? undefined
+                        : hasVariant(globalVariants, "screen", "phone")
+                        ? true
                         : true
                     }
                     className={classNames("__wab_instance", sty.tab___9S5V)}
@@ -505,183 +502,12 @@ function PlasmicHomepage__RenderFunc(props: {
                 </MakeupDescription>
               </div>
             ) : null}
-            <p.Stack
-              as={"div"}
+            <Showcase
               data-plasmic-name={"showcase"}
               data-plasmic-override={overrides.showcase}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.showcase)}
-            >
-              <p.Stack
-                as={"div"}
-                data-plasmic-name={"tabs"}
-                data-plasmic-override={overrides.tabs}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.tabs)}
-              >
-                <Tab
-                  className={classNames("__wab_instance", sty.tab__pWcv2)}
-                  selected={true}
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__huLrO
-                    )}
-                  >
-                    {"Makeup express"}
-                  </div>
-                </Tab>
-                <Tab className={classNames("__wab_instance", sty.tab__nxvxt)}>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__iawO0
-                    )}
-                  >
-                    {"Makeup social"}
-                  </div>
-                </Tab>
-                <Tab className={classNames("__wab_instance", sty.tab__sGmtY)}>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__sItH
-                    )}
-                  >
-                    {"Makeup para bodas"}
-                  </div>
-                </Tab>
-              </p.Stack>
-              <p.Stack
-                as={"div"}
-                data-plasmic-name={"images"}
-                data-plasmic-override={overrides.images}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.images)}
-              >
-                <div
-                  data-plasmic-name={"expressMakeup"}
-                  data-plasmic-override={overrides.expressMakeup}
-                  className={classNames(projectcss.all, sty.expressMakeup)}
-                />
-
-                <div
-                  data-plasmic-name={"socialMakeup"}
-                  data-plasmic-override={overrides.socialMakeup}
-                  className={classNames(projectcss.all, sty.socialMakeup)}
-                />
-
-                <div
-                  data-plasmic-name={"weddingMakeup"}
-                  data-plasmic-override={overrides.weddingMakeup}
-                  className={classNames(projectcss.all, sty.weddingMakeup)}
-                />
-              </p.Stack>
-              <div
-                data-plasmic-name={"serviceDescriptions"}
-                data-plasmic-override={overrides.serviceDescriptions}
-                className={classNames(projectcss.all, sty.serviceDescriptions)}
-              >
-                <MakeupDescription
-                  className={classNames(
-                    "__wab_instance",
-                    sty.makeupDescription___0CGw
-                  )}
-                  makeupType={"express"}
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__niZiy
-                    )}
-                  >
-                    {
-                      "Limpieza superficial e hidrataci\u00f3n de la piel. Dise\u00f1o de cejas. Correcci\u00f3n de imperfecciones de la piel. Contorno de rostro. Delineado. M\u00e1scara de pesta\u00f1as. Labial."
-                    }
-                  </div>
-                </MakeupDescription>
-                {(
-                  hasVariant(globalVariants, "screen", "tablet") ? true : false
-                ) ? (
-                  // <MakeupDescription
-                  //   className={classNames(
-                  //     "__wab_instance",
-                  //     sty.makeupDescription__npsJ
-                  //   )}
-                  //   makeupType={"express"}
-                  // >
-                  //   <div
-                  //     className={classNames(
-                  //       projectcss.all,
-                  //       projectcss.__wab_text,
-                  //       sty.text__atNwH
-                  //     )}
-                  //   >
-                  //     {
-                  //       "Limpieza superficial e hidrataci\u00f3n de la piel. Dise\u00f1o de cejas. Correcci\u00f3n de imperfecciones de la piel. Contorno de rostro.\nDelineado. M\u00e1scara de pesta\u00f1as. Labial."
-                  //     }
-                  //   </div>
-                  // </MakeupDescription>
-                  null
-                ) : null}
-                <p.Stack
-                  as={"div"}
-                  data-plasmic-name={"maquillajeRePro2"}
-                  data-plasmic-override={overrides.maquillajeRePro2}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.maquillajeRePro2)}
-                >
-                  <LineIcon
-                    className={classNames(projectcss.all, sty.svg___6TBhr)}
-                    role={"img"}
-                  />
-
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text___3SgD
-                    )}
-                  >
-                    {
-                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam convallis tempus sed a ornare facilisi ac cursus purus. Elit, montes, in et fermentum a dignissim. Massa purus mauris, lectus imperdiet."
-                    }
-                  </div>
-                </p.Stack>
-                <p.Stack
-                  as={"div"}
-                  data-plasmic-name={"maquillajeElPurete2"}
-                  data-plasmic-override={overrides.maquillajeElPurete2}
-                  hasGap={true}
-                  className={classNames(
-                    projectcss.all,
-                    sty.maquillajeElPurete2
-                  )}
-                >
-                  <Line2Icon
-                    className={classNames(projectcss.all, sty.svg___7CnbR)}
-                    role={"img"}
-                  />
-
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__ydS
-                    )}
-                  >
-                    {
-                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam convallis tempus sed a ornare facilisi ac cursus purus. Elit, montes, in et fermentum a dignissim. Massa purus mauris, lectus imperdiet."
-                    }
-                  </div>
-                </p.Stack>
-              </div>
-            </p.Stack>
+              className={classNames("__wab_instance", sty.showcase)}
+              makeupType={"express"}
+            />
           </p.Stack>
         </div>
       </div>
@@ -710,15 +536,7 @@ const PlasmicDescendants = {
     "expressMakeup4",
     "socialMakeup3",
     "weddingMakeup2",
-    "showcase",
-    "tabs",
-    "images",
-    "expressMakeup",
-    "socialMakeup",
-    "weddingMakeup",
-    "serviceDescriptions",
-    "maquillajeRePro2",
-    "maquillajeElPurete2"
+    "showcase"
   ],
   navBar: ["navBar", "logo", "links"],
   logo: ["logo"],
@@ -739,15 +557,7 @@ const PlasmicDescendants = {
     "expressMakeup4",
     "socialMakeup3",
     "weddingMakeup2",
-    "showcase",
-    "tabs",
-    "images",
-    "expressMakeup",
-    "socialMakeup",
-    "weddingMakeup",
-    "serviceDescriptions",
-    "maquillajeRePro2",
-    "maquillajeElPurete2"
+    "showcase"
   ],
   sectionDescription: ["sectionDescription"],
   expressMakeupMobile: ["expressMakeupMobile", "expressMakeup2"],
@@ -764,29 +574,7 @@ const PlasmicDescendants = {
   expressMakeup4: ["expressMakeup4"],
   socialMakeup3: ["socialMakeup3"],
   weddingMakeup2: ["weddingMakeup2"],
-  showcase: [
-    "showcase",
-    "tabs",
-    "images",
-    "expressMakeup",
-    "socialMakeup",
-    "weddingMakeup",
-    "serviceDescriptions",
-    "maquillajeRePro2",
-    "maquillajeElPurete2"
-  ],
-  tabs: ["tabs"],
-  images: ["images", "expressMakeup", "socialMakeup", "weddingMakeup"],
-  expressMakeup: ["expressMakeup"],
-  socialMakeup: ["socialMakeup"],
-  weddingMakeup: ["weddingMakeup"],
-  serviceDescriptions: [
-    "serviceDescriptions",
-    "maquillajeRePro2",
-    "maquillajeElPurete2"
-  ],
-  maquillajeRePro2: ["maquillajeRePro2"],
-  maquillajeElPurete2: ["maquillajeElPurete2"]
+  showcase: ["showcase"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -811,15 +599,7 @@ type NodeDefaultElementType = {
   expressMakeup4: "div";
   socialMakeup3: "div";
   weddingMakeup2: "div";
-  showcase: "div";
-  tabs: "div";
-  images: "div";
-  expressMakeup: "div";
-  socialMakeup: "div";
-  weddingMakeup: "div";
-  serviceDescriptions: "div";
-  maquillajeRePro2: "div";
-  maquillajeElPurete2: "div";
+  showcase: typeof Showcase;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -901,14 +681,6 @@ export const PlasmicHomepage = Object.assign(
     socialMakeup3: makeNodeComponent("socialMakeup3"),
     weddingMakeup2: makeNodeComponent("weddingMakeup2"),
     showcase: makeNodeComponent("showcase"),
-    tabs: makeNodeComponent("tabs"),
-    images: makeNodeComponent("images"),
-    expressMakeup: makeNodeComponent("expressMakeup"),
-    socialMakeup: makeNodeComponent("socialMakeup"),
-    weddingMakeup: makeNodeComponent("weddingMakeup"),
-    serviceDescriptions: makeNodeComponent("serviceDescriptions"),
-    maquillajeRePro2: makeNodeComponent("maquillajeRePro2"),
-    maquillajeElPurete2: makeNodeComponent("maquillajeElPurete2"),
 
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,

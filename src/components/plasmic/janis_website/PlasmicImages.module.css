@@ -1,0 +1,113 @@
+.images {
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+.images > :global(.__wab_flex-container) {
+  align-content: stretch;
+  align-items: stretch;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  margin-left: calc(0px - 0px);
+  width: calc(100% + 0px);
+}
+.images > :global(.__wab_flex-container) > *,
+.images > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.images > :global(.__wab_flex-container) > picture > img,
+.images
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 0px;
+}
+.expressMakeup {
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1),
+    0px 20px 44px 0px rgba(0, 0, 0, 0.1), 0px 81px 81px 0px rgba(0, 0, 0, 0.09),
+    0px 182px 109px 0px rgba(0, 0, 0, 0.05),
+    0px 323px 129px 0px rgba(0, 0, 0, 0.009),
+    0px 505px 141px 0px rgba(0, 0, 0, 0);
+  background: url("./images/maquillajeAsiNomas.jpg") center center / cover no-repeat;
+  width: 734px;
+  height: 500px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  z-index: 3;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: calc(0px + 0px) !important;
+  flex-shrink: 0;
+  border-radius: 412px;
+}
+.expressMakeupmakeupType_express {
+  margin-left: calc(0px + 0px) !important;
+}
+.expressMakeupmakeupType_social {
+  background: url("./images/maquillajeRePro.jpg") center center / cover no-repeat;
+  margin-left: calc(0px + 0px) !important;
+}
+.expressMakeupmakeupType_wedding {
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1),
+    0px 20px 44px 0px rgba(0, 0, 0, 0.1), 0px 81px 81px 0px rgba(0, 0, 0, 0.09),
+    0px 182px 109px 0px rgba(0, 0, 0, 0.05),
+    0px 323px 129px 0px rgba(0, 0, 0, 0.009),
+    0px 505px 141px 0px rgba(0, 0, 0, 0);
+  background: url("./images/maquillajeElPurete.jpg") center center / cover no-repeat;
+  margin-left: calc(0px + 0px) !important;
+}
+.socialMakeup {
+  background: url("./images/maquillajeRePro.jpg") center center / cover no-repeat;
+  width: 734px;
+  height: 500px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: calc(-688px + 0px) !important;
+  z-index: 2;
+  flex-shrink: 0;
+  border-radius: 412px;
+}
+.socialMakeupmakeupType_express {
+  margin-left: calc(-688px + 0px) !important;
+}
+.socialMakeupmakeupType_social {
+  width: 734px;
+  height: 500px;
+  background: url("./images/maquillajeAsiNomas.jpg") center center / cover no-repeat;
+  box-shadow: none;
+  margin-left: calc(-688px + 0px) !important;
+  flex-shrink: 0;
+  border-radius: 412px;
+}
+.socialMakeupmakeupType_wedding {
+  margin-left: calc(-688px + 0px) !important;
+}
+.weddingMakeup {
+  background: url("./images/maquillajeElPurete.jpg") center center / cover no-repeat;
+  width: 734px;
+  height: 500px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: calc(-688px + 0px) !important;
+  z-index: 1;
+  flex-shrink: 0;
+  border-radius: 412px;
+}
+.weddingMakeupmakeupType_express {
+  margin-left: calc(-688px + 0px) !important;
+}
+.weddingMakeupmakeupType_wedding {
+  background: url("./images/maquillajeAsiNomas.jpg") center center / cover no-repeat;
+  margin-left: calc(-688px + 0px) !important;
+}

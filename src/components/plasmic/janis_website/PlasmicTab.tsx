@@ -56,17 +56,22 @@ export const PlasmicTab__VariantProps = new Array<VariantPropType>(
 
 export type PlasmicTab__ArgsType = {
   children?: React.ReactNode;
+  onClick?: (event: any) => void;
 };
 type ArgPropType = keyof PlasmicTab__ArgsType;
-export const PlasmicTab__ArgProps = new Array<ArgPropType>("children");
+export const PlasmicTab__ArgProps = new Array<ArgPropType>(
+  "children",
+  "onClick"
+);
 
 export type PlasmicTab__OverridesType = {
-  pill?: p.Flex<"div">;
+  pill?: p.Flex<"button">;
   freeBox?: p.Flex<"div">;
 };
 
 export interface DefaultTabProps {
   children?: React.ReactNode;
+  onClick?: (event: any) => void;
   selected?: SingleBooleanChoiceArg<"selected">;
   big?: SingleBooleanChoiceArg<"big">;
   className?: string;
@@ -127,7 +132,7 @@ function PlasmicTab__RenderFunc(props: {
 
   return (
     <p.Stack
-      as={"div"}
+      as={"button"}
       data-plasmic-name={"pill"}
       data-plasmic-override={overrides.pill}
       data-plasmic-root={true}
@@ -135,6 +140,7 @@ function PlasmicTab__RenderFunc(props: {
       hasGap={true}
       className={classNames(
         projectcss.all,
+        projectcss.button,
         projectcss.root_reset,
         projectcss.plasmic_default_styles,
         projectcss.plasmic_mixins,
@@ -145,6 +151,10 @@ function PlasmicTab__RenderFunc(props: {
           [sty.pillselected]: hasVariant($state, "selected", "selected")
         }
       )}
+      onClick={args.onClick}
+      ref={ref => {
+        $refs["pill"] = ref;
+      }}
     >
       <div
         data-plasmic-name={"freeBox"}
@@ -171,7 +181,7 @@ type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
-  pill: "div";
+  pill: "button";
   freeBox: "div";
 };
 

@@ -7,7 +7,7 @@
   },
   "style": {
     "scheme": "css-modules",
-    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.module.css"
   },
   "images": {
     "scheme": "files",
@@ -66,6 +66,46 @@
           "cssFilePath": "plasmic/janis_website/PlasmicMakeupDescription.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "zjX1ZiAZla8T",
+          "name": "Showcase",
+          "type": "managed",
+          "projectId": "5gGUsmDkteQcDm1s3dbX1r",
+          "renderModuleFilePath": "plasmic/janis_website/PlasmicShowcase.tsx",
+          "importSpec": {
+            "modulePath": "Showcase.tsx"
+          },
+          "cssFilePath": "plasmic/janis_website/PlasmicShowcase.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "OXf6eLeE3PJ1",
+          "name": "Images",
+          "type": "managed",
+          "projectId": "5gGUsmDkteQcDm1s3dbX1r",
+          "renderModuleFilePath": "plasmic/janis_website/PlasmicImages.tsx",
+          "importSpec": {
+            "modulePath": "Images.tsx"
+          },
+          "cssFilePath": "plasmic/janis_website/PlasmicImages.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "hAMh4UsW8K-n",
+          "name": "Button",
+          "type": "managed",
+          "projectId": "5gGUsmDkteQcDm1s3dbX1r",
+          "renderModuleFilePath": "plasmic/janis_website/PlasmicButton.tsx",
+          "importSpec": {
+            "modulePath": "Button.tsx"
+          },
+          "cssFilePath": "plasmic/janis_website/PlasmicButton.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "button"
         }
       ],
       "icons": [
@@ -108,6 +148,16 @@
           "id": "2pBtv_yC8Zpj",
           "name": "Line2Icon",
           "moduleFilePath": "plasmic/janis_website/icons/PlasmicIcon__Line2.tsx"
+        },
+        {
+          "id": "q5hvSKOku0i7",
+          "name": "ChecksvgIcon",
+          "moduleFilePath": "plasmic/janis_website/icons/PlasmicIcon__Checksvg.tsx"
+        },
+        {
+          "id": "qrZ5muO3VcBU",
+          "name": "IconIcon",
+          "moduleFilePath": "plasmic/janis_website/icons/PlasmicIcon__Icon.tsx"
         }
       ],
       "images": [
